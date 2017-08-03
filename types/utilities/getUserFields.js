@@ -5,11 +5,7 @@ import {
   GraphQLBoolean,
 } from 'graphql';
 
-const getTrimmedFollowingUrl = (url) => {
-  const bracketIndex = url.indexOf('{');
-
-  return url.slice(0, bracketIndex);
-};
+import getTrimmedFollowingUrl from './getTrimmedFollowingUrl.js';
 
 export default function getUserFields() {
   return {

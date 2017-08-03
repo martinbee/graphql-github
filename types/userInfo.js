@@ -2,6 +2,7 @@ import axios from 'axios';
 import { GraphQLObjectType, GraphQLList } from 'graphql';
 
 import getUserFields from './utilities/getUserFields.js'
+import getTrimmedFollowingUrl from './utilities/getTrimmedFollowingUrl.js';
 import FollowedUser from './followedUser.js';
 
 const UserInfo = new GraphQLObjectType({
